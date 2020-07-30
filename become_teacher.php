@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Login Form Design One | Fazt</title>
+    <link rel="stylesheet" href="signup.css">
+  </head>
+  <body>
+
+    <div class="background">
+      <div class="blur"></div>
+    </div>
+    
+   
+    
+    <div class="login-box">
+      
+      <a href="index.php"><img src="imagenes/logo.png" class="avatar" alt="" href ></a>
+  
+      <h1>Envianos tu datos!</h1>
+      <h3>Nosotros agendaremos una entrevista contigo</h3>
+
+      <form>
+        <br>
+        <label for="Nombre de usuario">Nombre</label>
+        <input type="text" placeholder="Ingresa tu Nombre completo" autocomplete="email">
+       
+        <label for="Nombre de usuario">Correo electronico</label>
+        <input type="text" placeholder="Ingresa tu Correo electronico" autocomplete="email">
+
+        
+
+        <div class="formularios" id="datos_personales">
+          <p>Fecha de nacimiento</p>
+        </div>
+        <div class="formularios">
+        
+        <input type="date" id="fecha" value="Fecha">
+        
+        <!-- name="trip-start" -->
+
+        <select name="Genero" id="Genero" >
+          <option value="" selected disabled hidden>Genero</option>
+          <option value="1">Hombre</option>
+          <option value="2">Mujer</option>
+          <option value="3">Otro</option>
+          <option value="4">Prefiero no decirlo</option>
+        </select>
+        </div>
+        
+        <input type="file" value="">
+        <input type="file" name="juan" id="curiculum">
+
+
+        <input type="submit" value="Enviar">
+        
+    </form>
+    </div>
+
+
+  </body>
+</html>
+
+<!-- q4YjKdgP0d -->

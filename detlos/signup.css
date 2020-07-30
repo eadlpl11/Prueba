@@ -1,0 +1,162 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  background-size: cover;
+  font-family: sans-serif;
+  height: 100vh;
+  background-color: black;
+}
+
+
+.background {
+  background-image: url(imagenes/nepal.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+  filter: blur(10px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.blur {  
+  height: 100vh;
+  width: 100%;
+  background-size: cover + 100px;
+} 
+
+
+
+
+
+
+
+.login-box {
+  width: 32em;
+  height: 48em;
+  background: black;
+  color: #50BC93;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 2em 2em;
+  border-radius: 0.5em;
+}
+
+.login-box .avatar {
+  width: 50%;
+  margin-top: -0.5em;
+  margin-bottom: 0.5em;
+  background-color:  transparent;
+  padding: 0px;
+  background-color: rgb(3, 102, 102);
+  border-radius: 50px;
+  margin-left: 9em;
+}
+
+.login-box h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+  
+}
+
+.login-box label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+  
+}
+
+.login-box input {
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+
+.login-box input[type="text"], .login-box input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+
+}
+
+.login-box input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #50BC93;
+  color: Black;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.login-box input[type="submit"]:hover {
+  cursor: pointer;
+  background: #000;
+  color: #50BC93;
+  border: 2px solid #50BC93;
+}
+
+.login-box a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgrey;
+  text-align: right;
+}
+
+.formularios{
+  display: flex;
+  height: 3rem;
+  justify-content: space-evenly;
+  margin-bottom: 1em;
+}
+
+#datos_personales{
+  justify-content: flex-start;}
+
+#datos_personales p {
+  margin-left: 11%;
+}
+
+#fecha{
+  text-align: center;
+  width: 9em;
+  height: 3em;
+  background-color: transparent;
+  color: white;
+}
+
+#Genero {
+  text-align: center;
+  width: 9em;
+  height: 3.2em;
+  background-color: transparent;
+  color: white;
+
+}
+
+.recordatorios {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.login-box a:hover {
+  color: #fff;
+}
+
+/* .login-box img {
+
+  background-color: red !important;
+  padding: 30px;
+} */

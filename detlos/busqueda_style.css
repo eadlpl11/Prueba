@@ -1,0 +1,673 @@
+/*-------------------------------------------------------------------------*/
+/*Generalidades*/
+header  {
+    padding: 1em 1.5em;
+    color: white;
+}
+
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+h3 {
+    color: #50BC93;
+}
+
+p {
+    color: ivory;
+}
+body {
+    
+    margin: 0px;
+    padding: 0px;
+    border:  0px;
+    font-family: Arial, Helvetica, Arial, sans-serif;
+
+}
+
+
+
+/*-------------------------------------------------------------------------*/
+/*Barra superior fixed (negra) */
+
+.barra_superior{
+    background-color: black;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    height: 2rem;
+    text-align: left;
+    list-style: none;
+    padding: 1em;
+    justify-content: space-between;
+    width: calc(100vw - 40px);
+    padding-right: 40px !important;  
+}
+
+
+.barra_superior img {
+    width: 2rem;
+    margin-left: 0.5rem;
+/*     padding: 0.5rem; */
+    width: 2.5rem;
+    padding: 0rem;
+    margin-top: 0.22rem;
+}
+
+
+.barra_superior a{
+    color: black;
+    font-style: inherit;
+    text-decoration: none;
+}
+
+
+
+#menu_img_barra {
+background-color: transparent;
+margin-left: 10px;
+}
+
+
+#profile_img_barra {
+ padding: 0px;
+ margin-top: -10px;
+ border: 0px;
+}
+
+
+#menu_logo img {
+    height: 10% ;
+    width: 20%;
+    background-color: red;
+}
+
+
+@media (min-width: 300px){
+    .barra_superior ul {
+    justify-content: space-between;
+}
+}
+
+@media (min-width: 750px){
+    .barra_superior ul {
+    justify-content: flex-end;
+    
+}
+
+/* #menu_img_barra{
+
+    margin-right: auto;
+} */
+}
+
+@media (min-width: 300px){
+
+    .barra_superior #input_container{
+        width: 20%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .barra_superior #input_container input{
+        width: 0%;
+        height: 0%;
+        background-color: white;
+        padding: 0px;
+        border: 0px;
+        margin: 0px;
+    }
+    
+
+    .barra_superior #input_container img{
+        vertical-align: top;
+        padding: 0px;
+        border: 0px;
+        margin-top: -0.35em;
+        margin-left: 10px;
+    }
+}
+
+
+@media (min-width: 1000px){
+
+    .barra_superior #input_container{
+        width: 70%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .barra_superior #input_container input{
+        width: 60%;
+        height: 100%;
+        background-color: white;
+        border-radius: 0.5em;
+        font-size: 1.2rem;
+        margin-left: 10px;
+    }
+
+    /* .barra_superior #input_container a {
+        color: red ;
+    } */
+    
+        .barra_superior #input_container img{
+        vertical-align: top;
+        padding: 0px;
+        border: 0px;
+        margin-top: -0.35em;
+        margin-left: 10px;
+    }
+
+    #input{
+        padding-left: 10px !important;
+    }
+}
+
+
+/* Estilos de Botones login signup */
+
+
+#barra_superior_loginsignin_signup {
+    margin: auto;
+    background-color: #50BC93;
+    padding: 0.3em;
+    border-radius: 0.5em;
+    border: 2px solid #50BC93;
+
+}
+
+#barra_superior_loginsignin_signup:hover{
+    background-color: transparent;
+    border: 2px solid #50BC93;
+
+}
+
+#barra_superior_loginsignin_signup:hover a{
+    color: #50BC93;
+}
+
+#barra_superior_loginsignin_login {
+    margin: auto;
+    background-color: transparent;
+    padding: 0.3em;
+    border-radius: 0.5em;
+    border: 2px solid #50BC93;
+}
+
+@media(min-width: 300px){
+#barra_superior_loginsignin_login{
+    margin-left: 10px;
+}
+}
+
+@media(min-width: 1000px){
+    #barra_superior_loginsignin_login{
+        margin-left: 0px;
+}
+}
+
+
+
+#barra_superior_loginsignin_login a {
+    color: #50BC93;
+}
+
+#barra_superior_loginsignin_login:hover{
+    background-color: #50BC93;
+}
+
+#barra_superior_loginsignin_login:hover a{
+    color:black;
+}
+
+
+
+@media (min-width: 300px){
+#barra_superior_loginsignin{
+/*     background-color: brown;
+ */ display: flex;
+    width: 65%;    
+}
+}
+
+
+
+@media (min-width: 1000px){
+    #barra_superior_loginsignin{
+        display: flex;
+        margin-left: auto;
+        width: 15%;
+        align-self: flex-end;
+        background-color: transparent;
+        
+    }
+}
+
+
+
+
+
+:not(.barra_superior){
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+
+/*-------------------------------------------------------------------------*/
+/* Drop down menu (user) */
+
+#modal-user{
+    display: none;
+}
+
+.modal-body-user {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    width: 19.6em;
+    height: 16em;
+    text-align: left;
+    position: fixed;
+    border-top: none;
+    border-right: none;
+    border-bottom-left-radius: 10px;
+    max-zoom: inherit;
+    top: 4em;
+    right: 0px;
+}
+
+/* .modal-body-user {  
+ display: block !important;   
+}
+Lo  */
+
+.modal-close-user {  
+    cursor: pointer;
+}
+
+#close-user {}
+
+.modal-body-user {
+    text-decoration: none;
+
+}
+
+.modal-body-user a {
+    line-height: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+#lenguaje {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#lenguaje img {
+    padding: 0.4em 1.6em 0.1em 1.55em;
+    height: 3em;
+}
+
+#dark{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#dark img{
+    height: 3em;
+    margin-right: -1em; 
+    margin: 0.1em, 0px;
+}
+
+#become_teacher{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+#become_teacher img {
+    padding: 0px 1.5em 0.1em 1.1em;
+}
+
+#help{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#help img {
+    padding: 0.1em 1.5em 0.1em 1em;
+}
+
+#exit{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#exit img{
+    padding: 0.1em 1.9em 0.7em 1.55em;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 2em;
+    
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  button{
+    background-color: transparent;
+    border: none;
+}
+
+/* --------------------------------------------------------------------------------------------------------
+*           2
+*/
+
+.modal {  
+    display: none;
+    
+}
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.modal-body {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 15%;
+    background-color: black;
+    overflow: auto;
+    z-index: 2;
+}
+
+#close {
+    display: flex;
+    border-radius: 0.3em;
+    width: 0.4em;
+    height: 1.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+#close img {
+height: 1em;
+width: 1em;
+}
+
+.modal-body > button{
+    background-color: transparent;
+    
+    margin: 10px 0px 0px calc(87% - 2em);
+    border: none;
+}
+
+.modal-body > button:hover{
+    background-color: white;
+}
+
+.modal-body > a{
+    text-decoration: none;
+    text-align: start;
+}
+
+.modal-body > a > p{
+    margin: 10px 0px 0px;
+    font-size: 1.5rem;
+    padding: 0.5em 0px;
+    text-align: center;
+    color: white;
+}
+
+
+.modal-body > a > p:hover{
+background-color: white;
+color: black;
+}
+
+.modal-close {
+    cursor: pointer;
+}
+
+/*-------------------------------------------------------------------------*/
+/* Teachers contaienr */
+
+
+#flex {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+.grid {
+    width: 75vw;
+    /* height: 240vh; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: repeat(10, 1fr); */
+    grid-auto-rows: 12vw;
+    grid-gap: 1rem;
+    margin: 2rem;
+}
+
+
+
+
+.grid > div {
+    background: #EDE7F6;
+    padding: 1.5em;
+    border-radius: 1vw;
+}
+
+
+
+
+
+
+
+
+
+#tarjeta {
+    background-image: url(imagenes/maestros/profile3.jpg);
+    background-size: 100%, no-repeat;
+    display: flex; 
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 0px ;
+    margin: 0px ;
+    text-align: center;
+    align-items: flex-end;
+}
+
+.texto_tarjeta {
+    display: flex;
+    background-color: whitesmoke;
+    font-size: 2.2vh;
+    border: 1px solid #aeb0b7;
+    border-top: none;
+    color: #031f72;
+    justify-content: space-evenly;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 30%;
+    align-items: center;
+}
+
+.texto_tarjeta h5 {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    /* align-self: flex-start;
+    justify-content: end; */
+    
+}
+
+
+
+.texto_tarjeta img {
+    height:1em;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    margin-bottom: -0.2em;
+}
+
+.texto_tarjeta h5 #green_dot {
+    margin: 0px;
+    margin-right: 10px;
+    border: 0px;
+    padding: 0px;
+/*     margin-top: -0.4em; */
+    height: 0.6em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer_imagen{
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    z-index: 1;
+    height: 5%;
+    width: 100%;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    color: white;
+}
+
+#footer_imagen a{ 
+    font-size: 10px;
+    height: 100%;
+    width: 50%;
+}
+
+#footer_imagen img:hover{
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+
+#footer_imagen img{
+    height: 100%;
+}
+
+#footer_imagen img:hover{
+    flex-grow: 0.1;
+    height: 120%;
+}
+
+
+
+
+#float_left {
+display: flex;
+width: 8%;
+margin-left: 2%;
+}
+
+
+
+#float_right {
+    display: flex;
+    width: 8%;
+    margin-right: 2%;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
